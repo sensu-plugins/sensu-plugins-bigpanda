@@ -18,7 +18,6 @@ notifications:
     on_failure: always
 script:
   - bundle exec rake default
-  - bundle exec kitchen test
   - gem build sensu-plugins-bigpanda.gemspec
   - gem install sensu-plugins-bigpanda-*.gem
 deploy:
@@ -34,4 +33,3 @@ deploy:
     rvm: 2.2
     rvm: 2.3.0
     repo: sensu-plugins/sensu-plugins-bigpanda
-
