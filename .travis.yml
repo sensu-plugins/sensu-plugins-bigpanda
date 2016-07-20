@@ -1,0 +1,37 @@
+language: ruby
+sudo: required
+dist: trusty
+cache:
+- bundler
+install:
+- bundle install
+rvm:
+- 2.0
+- 2.1
+- 2.2
+- 2.3.0
+notifications:
+  email:
+    recipients:
+    - sensu-plugin@sensu-plugins.io
+    on_success: change
+    on_failure: always
+script:
+  - bundle exec rake default
+  - bundle exec kitchen test
+  - gem build sensu-plugins-bigpanda.gemspec
+  - gem install sensu-plugins-bigpanda-*.gem
+deploy:
+  provider: rubygems
+  api_key:
+    secure: gEAG8w7v8luKjpTp1NvNQ3qMUoGpfsNWmBByhwXq+A/B2KeaLd5UnUSEFJIK2JkxLkTr1rIpiWxBQmuHKN+RReJm8nij0Awt+oHLKruWw3rOht+fnlXHlI67njbXwnmQPuG44SOX5tqesWzwMBd35dIrYNJyygvwSlDXIOQtHUA=
+  gem: sensu-plugins-bigpanda
+  on:
+    tags: true
+    all_branches: true
+    rvm: 2.0
+    rvm: 2.1
+    rvm: 2.2
+    rvm: 2.3.0
+    repo: sensu-plugins/sensu-plugins-bigpanda
+
