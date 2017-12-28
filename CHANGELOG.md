@@ -1,8 +1,21 @@
-#Change Log
+# Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
+This CHANGELOG follows the format laid out [here](https://github.com/sensu-plugins/community/blob/master/HOW_WE_CHANGELOG.md)
 
-## Unreleased
+## [Unreleased]
+
+### Security
+- updated rubocop dependency to `~> 0.51.0` per: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8418. (@majormoses)
+
+### Breaking Changes
+- removed < ruby 2.1 support which was pulled as part of security updates (@majormoses)
+
+### Changed
+- appeased the cops (@majormoses)
+
 ### Added
 - Add testing for Ruby 2.4.1
+
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-bigpanda/compare/5e3b6c5bb931d7ced3fcad579589ab1f5c88c2c9...HEAD
+[0.1.0]: https://github.com/sensu-plugins/sensu-plugins-bigpanda/compare/5e3b6c5bb931d7ced3fcad579589ab1f5c88c2c9...0.1.0
