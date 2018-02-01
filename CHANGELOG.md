@@ -5,6 +5,7 @@ This CHANGELOG follows the format laid out [here](https://github.com/sensu-plugi
 
 ## [Unreleased]
 
+## [1.0.0] - 2018-01-31
 ### Security
 - updated rubocop dependency to `~> 0.51.0` per: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8418. (@majormoses)
 
@@ -17,5 +18,6 @@ This CHANGELOG follows the format laid out [here](https://github.com/sensu-plugi
 ### Added
 - Add testing for Ruby 2.4.1
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-bigpanda/compare/5e3b6c5bb931d7ced3fcad579589ab1f5c88c2c9...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-bigpanda/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/sensu-plugins/sensu-plugins-bigpanda/compare/0.1.0...1.0.0
 [0.1.0]: https://github.com/sensu-plugins/sensu-plugins-bigpanda/compare/5e3b6c5bb931d7ced3fcad579589ab1f5c88c2c9...0.1.0
