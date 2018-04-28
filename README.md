@@ -5,13 +5,14 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-bigpanda/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-bigpanda)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-bigpanda/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-bigpanda)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-bigpanda.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-bigpanda)
+![Community Slack](https://slack.sensu.io/badge.svg)](https://slack.sensu.io/badge)
 
 ## Functionality
 
 ## Files
  * bin/handler-bigpanda.rb
  *
- * 
+ *
 
 ## Usage
 
